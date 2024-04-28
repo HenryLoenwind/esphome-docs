@@ -23,7 +23,7 @@ monitors with ESPHome.
     :align: center
     :width: 80.0%
 
-    ZyAura ZGm053U connection diagram (1 - empty, 2 - clock, 3 - data, 4 - GND). In some other models the clock and data pins are swapped.
+    ZyAura ZGm053U connection diagram (1 - +5V (not populated), 2 - clock, 3 - data, 4 - GND). In some other models the clock and data pins are swapped.
 
 .. code-block:: yaml
 
@@ -56,7 +56,7 @@ Configuration variables:
   - **id** (*Optional*, :ref:`config-id`): Set the ID of this sensor for use in lambdas.
   - All other options from :ref:`Sensor <config-sensor>`.
 
-- **humidity** (*Optional*): The information for the humidity sensor
+- **humidity** (*Optional*): The information for the humidity sensor. (Not all models have one.)
 
   - **name** (**Required**, string): The name for the humidity sensor.
   - **id** (*Optional*, :ref:`config-id`): Set the ID of this sensor for use in lambdas.
